@@ -1,70 +1,57 @@
 
 # Using Virtual Reality to Create Software: A Likely Future
 
-I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  VR also facilitates interaction—such as head rotation—that is both more familiar to users and more powerful than a traditional mouse and keyboard.
+I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction that is both more familiar to users and more powerful than a traditional mouse and keyboard (example: head rotation).
 
-// TODO: what is virtual reality?
-//VR devices render a slightly different image for each eye (stereoscopic rendering) which allows humans to sense depth in the images just like in the physical world. 
+## What is Virtual Reality?
+For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that more like the physical world. This is currently accomplished mainly by devices like head-mounted displays such as the [Oculus Rift](https://www.oculus.com/). 
+
+### Depth
+The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the images just like in the physical world. 
+
+// TODO: how can this help?
+
+### Body Movement
+
+// TODO: how can this help?
+
+#### Head Rotation and Movement
+Rift wearers can even move their physical head to update their view of the virtual world. Rotating their physical head to the left actually causes the virtual world to rotate too!
+
+#### Hand Gestures
+Leap Motion, Data Glove, other new devices, company just bought by Oculus.
+
+#### Lower-body Movement
+Omnidirectional treadmills. 
+
+#### Full body suits
+PrioVR.
+
+VR allows people to see in true 3D and allows for easier and more natural interaction. These advantages have started to revolutionize both [gaming](http://www.techradar.com/us/news/gaming/beyond-oculus-the-future-of-virtual-reality-gaming-1255974) and [film making](http://www.jauntvr.com/) and could revolutionize software engineering as well.
 
 ## True 3D
 Previously, virtual 3D objects have been displayed on a 2D screen.  Rotation and movement are often allowed via mouse or keyboard controls but it is easy to forget the current orientation in relation to the big picture.  This is an issue fundamental to the problem of losing an entire dimension when displayed on a monitor.  VR overcomes this by literally allowing a user's view to complete an entire 360 degrees around them, just like in the physical world.  Having this immersive environment retains the third dimension and greatly helps users navigate the space and in essence, helps them get stuff done.
 
-## Improved Interaction
-Head mounted displays like the Oculus Rift are able to sense more of the human body.  The Rift can detect head rotation and head position relative to the camera in 3 dimensional space and rotates the virtual display in accordance to the user's muscle movement.  A novice user may have trouble remembering keyboard controls for 3D rotation, but they won't forget that simply turning their physical head controls the rotation.  Along with head movement, familiar hand gestures can also be used for more natural interaction and omni-directional treadmills would allow users to walk around their code by physically walking on the treadmill.
-
-// TODO
-// Who will benefit the most from VR software engineering tools? 3D developers (for now)
-// Will normal developers still benefit?
-
-
-## Scientific Intro
-// TODO translate into 'normal' intro above
-
-Programming environments from the previous decades still do not address programmer issues despite advances in psychology, neuroscience, and social aspects of software development.
-As a result, problems still persist.  Developers still experience disorientation when navigating code~\cite{Henley:2014}.
-Developers still experience problems comprehending code~\cite{Maalej:TOSEM:2014}.  These basic issues also impede other important software engineering activities. For example,
-in code review, due to insufficient ability to navigate and understand the code under review, developers mostly report issues, such as convention violations, instead of discussing design flaws or defects
-~\cite{bacchelli:ModernCodeReviewChallenges}.  
-
-Researchers have explored the cognitive issues underlying several problems developers experience~\cite{Parnin:2012}.
-For example, \emph{spatial memory}, a memory system in the parahippocampus that supports the ability to retain spatial awareness, is supported by place cells that fire as a person navigates through a physical space and other contextual cues in the environment.  Even after a single exposure, these memories can persist as long as a year.  The disorientation developers experience in programming environments often result from failures to engage a human's innate processing of spatial memory. Ko et al.~\cite{Ko:2006} observed that developers lost track of relevant code because they had to temporarily navigate to another location and forgot how to find the original location. This loss ocurred when the cues they relied on, such as position of scroll bars and document tabs, were disrupted as a result of their navigation.  Kuhn~\cite{Kuhn:2010} describes how developers maintain an internal spatial representation of code, and refer to code as being ``above or below'' other code.
-
-\emph{Affordances} are devices that leverage innate cognitive mechanisms.
-Researchers have attempted to improve interfaces that incorporate the human capacity for attention, cognition, and memory.
-For example, in one study, participants organized their web bookmarks by positioning screenshots of the pages on various piles in a 3-dimensional space~\cite{Robertson:1998}. 
-
-Similarly, researchers have incorporated affordances for spatial memory in programming environments.  Code Canvas~\cite{DeLine:CodeCanvas} positions code files on a large scrollable, zoomable plane which preserves stable spatial positions of code.  Code Bubbles~\cite{Bragdon:CodeBubbles} allows a developer to quickly position related fragments of code on an infinitely scrollable screen, which improves navigation and comprehension of fragments.  Patchworks~\cite{Henley:2014}, removes management of fragments and introduces a more stable layout, to improve disorientation that was still present with users of Code Bubbles.
-
-
-Spatial memory is just one such affordance that can be leveraged to improve programming environments and there are many others that could be better used. 
-This paper describes how head-mounted virtual reality (VR) displays coupled with gesture input provide several affordances not yet fully utilized in programming environments. 
-We then describe several VR systems we have prototyped and how VR can be applied to software engineering.  Finally, we provide a brief discussion of future work, open research questions, and challenges of using VR in software engineering with existing technologies.
-
-
-
-## Affordances in Virtual Reality
-We describe a set of affordances that VR provides and describe the potential benefits of integrating them into programming environments.
-
-### Spatial Cognition
+// taken from paper:
 Existing 3D visualizations attempt to take advantage of spatial cognition but lose much of their impact when displayed on a 2D screen~\cite{Teyseyre:Overview3DSoftwareVisualization}.
 In contrast, head-mounted virtual reality displays allow the user to update their view by moving their body or rotating their neck, even a full 360 degrees.
 Additionally, these displays render a slightly different image for each eye (stereoscopic rendering) which enables the human eye to more easily sense depth of images on the display.
 
-Virtual reality can directly mimic the affordances offered by physical navigation. Based on electrocorticography (eCoG) recordings on the surface of the brain, place cells could be observed firing in the same sequence as a person navigated a virtual town and again when they later recalled the paths through the town~\cite{Ekstrom:2003}.
+// Why will VR take off when 3D TV sucked?
 
+## Improved Interaction
+Head mounted displays like the Oculus Rift are able to sense more of the human body.  The Rift can detect head rotation and head position relative to the camera in 3 dimensional space and rotates the virtual display in accordance to the user's muscle movement.  A novice user may have trouble remembering keyboard controls for 3D rotation, but they won't forget that simply turning their physical head controls the rotation.  Along with head movement, familiar hand gestures can also be used for more natural interaction and omni-directional treadmills would allow users to walk around their code by physically walking on the treadmill.
 
-### Manipulation and Motion
-The affordances provided by manipulation of a physical object can result in improved perception and retention. 
-For example, the affordances offered by turning pages of a book result in increased comprehension and recall as when compared to reading the same text on computer displays~\cite{Noyes:2008}.
-Additionally, the ability to serendipitously browse and relocate material is improved.
-// http://embodiedknowledge.blogspot.com/2011/12/classic-experiment-by-held-and-hein.html
-Motion in a physical space, through exertions such as walking, have important cognitive consequences~\cite{Oppezzo:2014}.
-//Simply going for a walk increases creativity, even prior to starting the creative task~\cite{Oppezzo:2014}.
-Other affordances can be aided by motion. For example, perception of depth is enhanced by self-actuated movement in a space~\cite{Held:1963}.
+// TODO: integrate the below paragraph.
+For example, perception of depth is enhanced by self-actuated movement in a space~\cite{Held:1963}.
 
 Researchers have explored integrating natural interactions with existing programming environments~\cite{Delimarschi:2014}.
 Through input devices such as the Leap Motion, it is possible to physically interact with virtual objects.
 Physical movement is also possible in virtual spaces.  Body harnesses\footnote{\url{http://cyberith.com/product/}} allow free movement in a virtual space such as walking, running, jumping and crouching.
+
+// TODO
+// Who will benefit the most from VR software engineering tools? 3D developers (for now)
+// Will normal developers still benefit?
 
 ### Liveness
 // TODO: Read Tanimoto's paper about Liveness levels and then show how/if VR fits in.
@@ -74,6 +61,8 @@ The potency of giving programmers a direct and immediate connection to their cre
 When liveness is violated, the results can be nauseating.
 Simulator sickness is distinct from motion sickness, in that it arises due to a mismatch between a person's interaction and the expected response of the environment.
 For example, a person in virtual reality can become nauseous when they attempt to interact with the system but the system does not respond quickly enough.
+
+
 
 ## Applications
 We have built VR prototypes for live coding and code review which concretely demonstrate the benefits of using the affordances of VR.
