@@ -49,7 +49,7 @@ Additionally, these displays render a slightly different image for each eye (ste
 Virtual reality can directly mimic the affordances offered by physical navigation. Based on electrocorticography (eCoG) recordings on the surface of the brain, place cells could be observed firing in the same sequence as a person navigated a virtual town and again when they later recalled the paths through the town~\cite{Ekstrom:2003}.
 
 
-### Manipulation and Motion}
+### Manipulation and Motion
 The affordances provided by manipulation of a physical object can result in improved perception and retention. 
 For example, the affordances offered by turning pages of a book result in increased comprehension and recall as when compared to reading the same text on computer displays~\cite{Noyes:2008}.
 Additionally, the ability to serendipitously browse and relocate material is improved.
@@ -168,6 +168,8 @@ VR, on the other hand, allows users to view, explore and manipulate simulated wo
 These direct interactions provide a subtle but important advantage over 2D-projected simulations. 
 This sense of immersion gives the users unimpeded access to the simulation which allows for quicker turn-around when testing or debugging the simulated software, especially if combined with an in-situ live coding solution like \textsc{RiftSketch}.
 
+In practical applications, one could extend the concept of live coding and tight feedback loops in order to create customized programming environments. VR programming environments could allow the user to take advantage of the malleability and expanse of virtual worlds. For example, a user could live code a widget that indicates some statistic of the code they are currently editing, such as the cyclomatic complexity, test coverage or test result. The widget would update itself as the user typed, not unlike existing code feedback tools such as NCrunch \footnote{NCrunch automated concurrent testing tool: http://www.ncrunch.net/}, and they could position the widget in their virtual periphery.
+
 // TODO - relate to comet
 
 
@@ -179,124 +181,48 @@ They would be able to provide extra insight and could arrive at the solution fas
 A different set of programmers could then join each other in a VR code review environment to review the proposed solution.
 They are able to see what each person is thinking based on their annotations of the piles of information in their section of the system.
 
+Co-located development teams are able to communicate in person. Distributed teams can try, but the technology is too slow and it doesn't feel right. High Fidelity \footnote{https://highfidelity.io/} is implementing infrastructure for virtual worlds that is fast enough for developers to be able to sense body language and hear audio in real time. Distributed development teams will have the foundational issues of remote communication solved which enables a shared VR environment to become truly powerful.
 
-//Co-located development teams are able to communicate in person. 
-//Distributed teams can try, but the technology is too slow and it doesn't feel right. 
-//High Fidelity \footnote{https://highfidelity.io/} is implementing infrastructure for virtual worlds that is fast enough for developers to be able to sense body language and hear audio in real time.  
-//Distributed development teams will have the foundational issues of remote communication solved which enables a shared VR environment to become truly powerful.
+A benefit of co-location is pair programming, where two developers program at the same computer and can catch each others errors. VR and body sensing with a device like PrioVR would enable remote developers to be at a shared virtual desk right next to each other. They would be able to see the same files, talk in real time, and even point to which line of the code they are talking about. 
 
-//A benefit of co-location is pair programming, where two developers program at the same computer and can catch each others errors. 
-//VR and body sensing with a device like PrioVR would enable remote developers to be at a shared virtual desk right next to each other. 
-//They would be able to see the same files, talk in real time, and even point to which line of the code they are talking about. 
+#### Pair Design
+Co-located teams can design together around a whiteboard in a conference room as they talk through the problems of the system. A shared VR environment could have a similar room with sketching space that everyone can see. Developers could drag-and-drop files or code snippets to display on the walls around them. They could then discuss and annotate the code. Additionally, visualizations such as structure diagrams or architecture of related systems could be overlaid on a wall for reference.
 
-// pair 'live coding'/code review
-//Sharing a live coding environment enables all participants to have a tight feedback loop. 
-//This could be especially useful when the primary developer of a section needs to explain their modifications to the rest of the team. 
-//Everyone could meet in the shared VR live coding environment and watch while the developer walks through modification of their code. 
-//The team would be able to see how the system changed rather than looking through large amounts of code.
+#### Data Visualization
+Remote workers could experience immersive visualizations together. A control flow graph could be represented by a maze of rooms through which the team could walk. The team members could trace different paths and yet still be shown an overlay of where each of the other members are and how these positions relate to each other. Currently remote workers can each trace separate paths of the code but have a hard time communicating what those paths are and how they relate to each other.
 
-  // pair designing
-//Co-located teams can design together around a whiteboard in a conference room as they talk through the problems of the system. 
-//A shared VR environment could have a similar room with sketching space that everyone can see. 
-//Developers could drag-and-drop files or code snippets to display on the walls around them. 
-//They could then discuss and annotate the code. 
-//Additionally, visualizations such as structure diagrams or architecture of related systems could be overlaid on a wall for reference.
+Remote workers often miss out on many benefits that in-person communication can bring. Shared VR spaces tailored to developers' activities can fill some of the gaps caused by distance and help the team to function better together. 
 
-// exploring data visualization together
-//Remote workers could experience immersive visualizations together. 
-//A control flow graph could be represented by a maze of rooms through which the team could walk. 
-//The team members could trace different paths and yet still be shown an overlay of where each of the other members are and how these positions relate to each other. 
-//Currently remote workers can each trace separate paths of the code but have a hard time communicating what those paths are and how they relate to each other.
-
-//Remote workers often miss out on many benefits that in-person communication can bring. 
-//Shared VR spaces tailored to developers' activities can fill some of the gaps caused by distance and help the team to function better together. 
-
-
-// git diff + complexity vs active fragment
-//\subsubsection{Big Picture}
-//\textsc{Immersion} also displays overview diagrams of this changeset to allow the reviewer to see where this active fragment fits into the changeset as a whole. 
-//Similarly an overview of the cyclomatic complexity also helps the reviewer to see which areas of the code would be most relevant to see. 
-//These diagrams illustrate how VR is able to show multiple overview and detail diagrams without overwhelming the user.
-
-//Immersive VR environments have a lot more space for information display than current computer workstations.
-//We used \textsc{Immersion} to illustrate that VR software engineering tools can use this increased space and the affordances of VR to more easily analyze and navigate the displayed information.
-// What does VR provide that makes this different from using a Leap with 5 monitors?
-
-
-//\subsection{Simulation}
-
-//\section{Discussion}
-// VR vs AR in the future, which is better?
-  // code snippets while wearing Google Glass could appear on peripherals
-//We have presented two systems with applications in software engineering.
-
-//Although the current implementation of \textsc{RiftSketch} is little more than a creative toy, the authors' experience of using it for dozens of hours shows the potential of future applications. 
-
-//In practical applications, one could extend the concept of live coding and tight feedback loops in order to create customized programming environments. 
-//VR programming environments could allow the user to take advantage of the malleability and expanse of virtual worlds. 
-//For example, a user could live code a widget that indicates some statistic of the code they are currently editing, such as the cyclomatic complexity, test coverage or test result. 
-//The widget would update itself as the user typed, not unlike existing code feedback tools such as NCrunch \footnote{NCrunch automated concurrent testing tool: http://www.ncrunch.net/}, and they could position the widget in their virtual periphery.
-
-//\todo[Anthony]{Opportunities for other gestures: Refactoring}
 
 ### Open Questions
-
 \textbf{Degrees of Immersion.} 
-Augmented reality devices such as Google Glass, aim to help the user complete tasks in the physical world by adding information overlays. 
-Augmented reality seeks to help the user in the physical world while virtual reality seeks to completely replace physical reality. 
-\emph{Is it more useful to immerse the user in a completely virtual environment, or to enhance their physical world?}
+Augmented reality devices such as Google Glass, aim to help the user complete tasks in the physical world by adding information overlays. Augmented reality seeks to help the user in the physical world while virtual reality seeks to completely replace physical reality. \emph{Is it more useful to immerse the user in a completely virtual environment, or to enhance their physical world?}
 
-// Where is the limit for too much info displayed at once?
-//\subsubsection{Information Overload}
-// Somewhat discussed by Healey 2006: http://www.csc.ncsu.edu/faculty/healey/download/apgv_volume.06.pdf
-//A large advantage of VR is being able to display more information at once to the user.  
-//At what point does the extra information cause overload and begin to hinder productivity?  
-//Is this balance between amount of information and processing speed the same for each person (other aspects of VR can differ per person)?
 
-// Does using a VR code review tool actually increase comprehension? Does it allow users to find bugs and provide alternative solutions?
-
-// What gestures are most natural in VR?
 \textbf{Input Forms.}
-Gaming console controllers work well for navigation and limited action support but are surpassed by keyboards at text entry.
-However, such devices require users to interact with both the physical and virtual worlds at the same time.
-Gesture recognition removes interaction with the physical world but can cause physical strain.
-Voice recognition could reduce strain but may feel awkward in a shared work space.
-\emph{What is the best way for the user to provide input to a VR system?}
+Gaming console controllers work well for navigation and limited action support but are surpassed by keyboards at text entry. However, such devices require users to interact with both the physical and virtual worlds at the same time. Gesture recognition removes interaction with the physical world but can cause physical strain. Voice recognition could reduce strain but may feel awkward in a shared work space. \emph{What is the best way for the user to provide input to a VR system?}
+
 
 ### Challenges
 
 #### Separation from the Physical
-Putting on a VR headset means blocking out the rest of the physical world, including coworkers.
-Peers may lack the opportunity to ask questions and physical communication is stifled.
-Additionally, the VR headset wearer may have trouble interacting with the physical world while in VR.
-A webcam mounted to the headset enables some interaction with the physical world, as seen in Figure~\ref{fig:rift}, but has a limited field of view.
+Putting on a VR headset means blocking out the rest of the physical world, including coworkers. Peers may lack the opportunity to ask questions and physical communication is stifled. Additionally, the VR headset wearer may have trouble interacting with the physical world while in VR. A webcam mounted to the headset enables some interaction with the physical world, as seen in Figure~\ref{fig:rift}, but has a limited field of view.
 
 #### 3D Mapping
-Some problems don't have an inherent 3D representation which makes display in VR a challenge.
-As seen in \textsc{Immersion}, 2D code can be displayed in VR but the code itself does not have a third dimension and thus loses the expressiveness of 3D.
-This could be an area well suited to 3D metaphorical programming as suggested by Ko et al.~\cite{Ko:LearningBarriers}.
+Some problems don't have an inherent 3D representation which makes display in VR a challenge. As seen in \textsc{Immersion}, 2D code can be displayed in VR but the code itself does not have a third dimension and thus loses the expressiveness of 3D. This could be an area well suited to 3D metaphorical programming as suggested by Ko et al.~\cite{Ko:LearningBarriers}.
 
 #### Technology Limitations
+The 1080p resolution of the Oculus Rift Development Kit 2 allows for passable text reading, but needs improvement for multi-hour sessions. The Rift also requires users to measure the distance between their pupils for more accurate stereoscopic rendering, but current utilities are either time consuming or hard to use properly. Eyeglass wearers must go through extra trial and error to see if the headset is best used with glasses on and a reduced field of view or replace their glasses with stronger lenses in the Rift and have increased blurriness.
 
-The 1080p resolution of the Oculus Rift Development Kit 2 allows for passable text reading, but needs improvement for multi-hour sessions. 
-The Rift also requires users to measure the distance between their pupils for more accurate stereoscopic rendering, but current utilities are either time consuming or hard to use properly.
-Eyeglass wearers must go through extra trial and error to see if the headset is best used with glasses on and a reduced field of view or replace their glasses with stronger lenses in the Rift and have increased blurriness.
 
 
 ## Conclusions
-//We have shown that virtual reality enables a new interaction paradigm that can improve developers' lives. 
-//The immersive environment allows users to process more information at once and stereoscopic rendering enables depth-sensing. 
-//Together, these affordances provide a novel platform for new software engineering tools.
-
 Two-dimensional development environments have not been able to take full advantage of affordances such as spatial cognition, manipulation, and liveness.
-//Virtual reality offers affordances in spatial cognition, manipulation, and liveness that two-dimensional development environments have not been able to take full advantage of.
 This paper describes a vision of how software engineering can use virtual reality for new kinds of tools that can take advantage of these affordances.
 We described how both live coding and code review could benefit from VR tools but we envision many other software engineering activities can benefit from virtual reality as well.
 
-//We envision a future where software engineers work in immersive environments which take advantage of more affordances of the human body than current workstations.
-//We argue that these affordances provide a platform for new kinds of software engineering tools. 
 
-//We imagine a future in which many software engineers find it most productive to design and build software within a VR environment. 
+
 
 
 //////////////////////////////////////////
