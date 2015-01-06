@@ -1,9 +1,9 @@
 
-# Expected Productivity Gains From Virtual Reality Software Engineering Environments
-// # What if we could use VR to create software?
+# Using Virtual Reality to Create Software: A Likely Future
 
 I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  VR also facilitates interaction—such as head rotation—that is both more familiar to users and more powerful than a traditional mouse and keyboard.
 
+// TODO: what is virtual reality?
 //VR devices render a slightly different image for each eye (stereoscopic rendering) which allows humans to sense depth in the images just like in the physical world. 
 
 ## True 3D
@@ -12,9 +12,13 @@ Previously, virtual 3D objects have been displayed on a 2D screen.  Rotation and
 ## Improved Interaction
 Head mounted displays like the Oculus Rift are able to sense more of the human body.  The Rift can detect head rotation and head position relative to the camera in 3 dimensional space and rotates the virtual display in accordance to the user's muscle movement.  A novice user may have trouble remembering keyboard controls for 3D rotation, but they won't forget that simply turning their physical head controls the rotation.  Along with head movement, familiar hand gestures can also be used for more natural interaction and omni-directional treadmills would allow users to walk around their code by physically walking on the treadmill.
 
-// ---------------
+// TODO
+// Who will benefit the most from VR software engineering tools? 3D developers (for now)
+// Will normal developers still benefit?
 
-## Introduction
+
+## Scientific Intro
+// TODO translate into 'normal' intro above
 
 Programming environments from the previous decades still do not address programmer issues despite advances in psychology, neuroscience, and social aspects of software development.
 As a result, problems still persist.  Developers still experience disorientation when navigating code~\cite{Henley:2014}.
@@ -63,6 +67,7 @@ Through input devices such as the Leap Motion, it is possible to physically inte
 Physical movement is also possible in virtual spaces.  Body harnesses\footnote{\url{http://cyberith.com/product/}} allow free movement in a virtual space such as walking, running, jumping and crouching.
 
 ### Liveness
+// TODO: Read Tanimoto's paper about Liveness levels and then show how/if VR fits in.
 Liveness is a powerful affordance that can be defined by the speed and level of responsiveness to actions offered by an environment~\cite{Tanimoto:Liveness}.
 The potency of giving programmers a direct and immediate connection to their creations has been well illustrated in Bret Victor's seminal lecture, ``Inventing on Principle''~\cite{Victor:InventingOnPrincipleVideo}.//\cite{Victor:InventingOnPrincipleTranscript}.
 
@@ -77,13 +82,13 @@ We argue that the benefits described in this section can also be extended to oth
 Both of these systems use a head-mounted display (Oculus Rift - Development Kit 2) and a Leap Motion Controller for gesture recognition.
 
 ### Live Coding
-\textsc{RiftSketch}\footnote{\url{http://www.youtube.com/watch?v=SKPYx4CEIlM}} is a live coding environment built for VR which allows users to describe a 3D scene using the Three.js library\footnote{\url{http://threejs.org/}}.
+RiftSketch\footnote{\url{http://www.youtube.com/watch?v=SKPYx4CEIlM}} is a live coding environment built for VR which allows users to describe a 3D scene using the Three.js library\footnote{\url{http://threejs.org/}}.
 //It allows a user to describe a 3D scene using geometries, materials, textures, lights, meshes and other primitives provided by the Three.js library, which is a convenient wrapper for the WebGL APIs available in modern browsers. 
 // TODO: add pic of RiftSketch
 
-\textsc{RiftSketch} presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. 
+RiftSketch presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. 
 As the user types code into the editor, the world around them updates instantly to display the 3D scene dictated by their code. 
-\textsc{RiftSketch} also allows the user to animate their scene via a callback function which is executed on every frame. 
+RiftSketch also allows the user to animate their scene via a callback function which is executed on every frame. 
 The user can manipulate the state of the 3D scene in this looped block of code in order to add behaviour to the objects in their scene.
 This animation makes the user truly feel \emph{inside} the scene in a way not captured by a 2D screenshot.
 
@@ -92,13 +97,13 @@ To assist in interaction with the keyboard, we allow reality to shine through by
 
 
 ### Liveness
-\textsc{RiftSketch} demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. 
-\textsc{RiftSketch} is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance.  
-These benefits are especially evident in \textsc{RiftSketch} when the code describes a VR scene. 
+RiftSketch demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. 
+RiftSketch is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance.  
+These benefits are especially evident in RiftSketch when the code describes a VR scene. 
 As the authors have previously experienced, watching the entire virtual world change around you as you type can be an extremely powerful and engaging experience.
 
 #### Hand Manipulation of Code
-Furthermore, \textsc{RiftSketch} provides the user with shortcuts and input methods to quickly edit numbers in the code that they write. 
+Furthermore, RiftSketch provides the user with shortcuts and input methods to quickly edit numbers in the code that they write. 
 Keyboard shortcuts allow the user to increment or decrement numbers in the code by factors of 0.1, 10 or 100. 
 Integration with the Leap Motion Controller provides users with the ability to manipulate numbers using an up and down hand motion.
 This allows users to continuously modify a number using their hand and instantly see how this affects the scene, enabling faster feedback than manually typing one number at a time.
@@ -111,31 +116,31 @@ Automated telemetry programs cannot find a feasible flight path.
 As a programmer, you are tasked with updating the lander's software to reposition itself safely on solid ground and you have 24 hours before its batteries die and the probe deflects off the comet surface. 
 Thankfully the companion orbiter has gathered detailed information about the surface around the landing site and telemetry data shows exactly where and how the lander is positioned.
 
-You update your simulation with the data and step into \textsc{RiftSketch} to survey the situation. 
+You update your simulation with the data and step into RiftSketch to survey the situation. 
 After assessing the lander's options, you iterate on possible solutions, first by using hand gestures to manipulate a possible path and scale thrust settings, 
 and then the keyboard to refine the code. 
-With each solution, you observe the lander's behavior inside \textsc{RiftSketch}.
+With each solution, you observe the lander's behavior inside RiftSketch.
 You walk around the lander to inspect its position after each maneuver, leaning in to ensure that its feet are planted firmly in the regolith, and zooming out to an orbital view to verify that its new position maintains a line-of-sight to the orbiter on this lob-sided comet. 
 
-Finally, after having run the simulation dozens of times in \textsc{RiftSketch}, you pass the software on to review.
+Finally, after having run the simulation dozens of times in RiftSketch, you pass the software on to review.
 
 
 ### Code Review
-\textsc{Immersion} represents methods as code fragments similarly to Code Bubbles~\cite{Bragdon:CodeBubbles} and displays groups of fragments as piles on the floor like BumpTop~\cite{Agarawala:BumpTop}.
+Immersion represents methods as code fragments similarly to Code Bubbles~\cite{Bragdon:CodeBubbles} and displays groups of fragments as piles on the floor like BumpTop~\cite{Agarawala:BumpTop}.
 Piles can be expanded into a more detailed ring for an overview and detail visualization~\cite{Shneiderman:InfoVisTaxonomy}.
 
 // TODO: add pic of Immersion
 
 #### Spatial Reasoning
-The reviewer initially sees the active fragment in the center of the screen (see Figure~\ref{fig:Immersion}) with other relevant fragments distributed around the floor in piles. 
+The reviewer initially sees the active fragment in the center of the screen with other relevant fragments distributed around the floor in piles. 
 Reviewers use spatial cognition to judge the relevance of piles by how far away the pile is as well as the size of the pile.
 The reviewer is able to scan the labels of the piles and number of fragments in each pile to quickly verify if each pile is indeed relevant.
 
-\textsc{Immersion} divides the floor into sections based on packages of the system and color codes the sections to indicate how much that package has been modified by the code under review.
+Immersion divides the floor into sections based on packages of the system and color codes the sections to indicate how much that package has been modified by the code under review.
 By walking between packages, we expect reviewers to have better mental models due to the increased usage of spatial reasoning.
 Similarly, we expect that reviewers would be able to more easily recall review details after the review since the spatial elements of their brains were more engaged.
 
-//\textsc{Immersion} uses semantic zoom to make method names readable even when at the back of the ring and the fragments retain a scaled height enabling the reviewer to approximate its length. 
+//Immersion uses semantic zoom to make method names readable even when at the back of the ring and the fragments retain a scaled height enabling the reviewer to approximate its length. 
 
 ### Gesture Interaction
 Reviewers can make a grabbing motion to select a pile and then can pull their hand up to transform the pile into a ring of fragments for more detailed inspection.
@@ -149,10 +154,10 @@ We have initially focused on supporting exploration--comments can be added via k
 #### Usage Example
 Consider the previous comet scenario where a programmer has implemented a repositioning flight path for the lander.
 
-A reviewer puts on a Rift and enters \textsc{Immersion} to ensure this solution will actually work.
+A reviewer puts on a Rift and enters Immersion to ensure this solution will actually work.
 She notes an edge case which might cause a collision and suggests gently crashing the companion orbiter into the probe to avoid a larger collision.
-The original programmer implements the suggestion in \textsc{RiftSketch}, ensures the simulation works and celebrates before submitting the correction to the reviewer.
-However, the reviewer sees a section of code light up in \textsc{Immersion}.
+The original programmer implements the suggestion in RiftSketch, ensures the simulation works and celebrates before submitting the correction to the reviewer.
+However, the reviewer sees a section of code light up in Immersion.
 As she walks over to the section she sees that it is the collision detection section warning that the system will not allow this code to execute outside of the simulator.
 She realizes she can allow the execution by shutting off the engine just before impact to override the system.
 They upload the code and the lander repositions itself as expected.
@@ -166,7 +171,7 @@ Interacting with a simulation might require positioning a virtual cursor which c
 
 VR, on the other hand, allows users to view, explore and manipulate simulated worlds directly. One can imagine a user physically turning their head to look around a simulated car plant or using their hands, via a Leap Motion controller, to interact with a simulated robot. 
 These direct interactions provide a subtle but important advantage over 2D-projected simulations. 
-This sense of immersion gives the users unimpeded access to the simulation which allows for quicker turn-around when testing or debugging the simulated software, especially if combined with an in-situ live coding solution like \textsc{RiftSketch}.
+This sense of immersion gives the users unimpeded access to the simulation which allows for quicker turn-around when testing or debugging the simulated software, especially if combined with an in-situ live coding solution like RiftSketch.
 
 In practical applications, one could extend the concept of live coding and tight feedback loops in order to create customized programming environments. VR programming environments could allow the user to take advantage of the malleability and expanse of virtual worlds. For example, a user could live code a widget that indicates some statistic of the code they are currently editing, such as the cyclomatic complexity, test coverage or test result. The widget would update itself as the user typed, not unlike existing code feedback tools such as NCrunch \footnote{NCrunch automated concurrent testing tool: http://www.ncrunch.net/}, and they could position the widget in their virtual periphery.
 
@@ -174,7 +179,7 @@ In practical applications, one could extend the concept of live coding and tight
 
 
 ### Remote Collaboration
-Both \textsc{RiftSketch} and \textsc{Immersion} could help facilitate remote collaboration.
+Both RiftSketch and Immersion could help facilitate remote collaboration.
 Multiple programmers located around the world could join each other in a VR live coding space to figure out how to land the comet from the motivating example.
 They would be able to provide extra insight and could arrive at the solution faster.
 
@@ -209,7 +214,7 @@ Gaming console controllers work well for navigation and limited action support b
 Putting on a VR headset means blocking out the rest of the physical world, including coworkers. Peers may lack the opportunity to ask questions and physical communication is stifled. Additionally, the VR headset wearer may have trouble interacting with the physical world while in VR. A webcam mounted to the headset enables some interaction with the physical world, as seen in Figure~\ref{fig:rift}, but has a limited field of view.
 
 #### 3D Mapping
-Some problems don't have an inherent 3D representation which makes display in VR a challenge. As seen in \textsc{Immersion}, 2D code can be displayed in VR but the code itself does not have a third dimension and thus loses the expressiveness of 3D. This could be an area well suited to 3D metaphorical programming as suggested by Ko et al.~\cite{Ko:LearningBarriers}.
+Some problems don't have an inherent 3D representation which makes display in VR a challenge. As seen in Immersion, 2D code can be displayed in VR but the code itself does not have a third dimension and thus loses the expressiveness of 3D. This could be an area well suited to 3D metaphorical programming as suggested by Ko et al.~\cite{Ko:LearningBarriers}.
 
 #### Technology Limitations
 The 1080p resolution of the Oculus Rift Development Kit 2 allows for passable text reading, but needs improvement for multi-hour sessions. The Rift also requires users to measure the distance between their pupils for more accurate stereoscopic rendering, but current utilities are either time consuming or hard to use properly. Eyeglass wearers must go through extra trial and error to see if the headset is best used with glasses on and a reduced field of view or replace their glasses with stronger lenses in the Rift and have increased blurriness.
