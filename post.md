@@ -9,6 +9,8 @@ For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wik
 ### Depth
 The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the virtually images just like in the physical world. Previously, 3D scenes have been displayed on 2D monitors, now users can view 3D scenes in true 3D.
 
+// TODO: bring in a simplified version of the spatial argument here
+
 ### Body Movement
 There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which enables opportunities not yet seen.
 
@@ -17,6 +19,15 @@ Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense 
 All of these devices give users more freedom in how they interact with computers. Us developers can now create applications like RiftSketch that put us in the middle of the 3D scene we are creating.
 
 // TODO: add links to devices
+
+// TODO: reference natural gesture paper?
+
+
+
+
+
+
+
 
 
 ## Applications
@@ -51,46 +62,40 @@ You update your simulation with the data and step into RiftSketch to survey the 
 Finally, after having run the simulation dozens of times in RiftSketch, you pass the software on to review.
 
 
-### Code Review
-Immersion represents methods as code fragments similarly to Code Bubbles~\cite{Bragdon:CodeBubbles} and displays groups of fragments as piles on the floor like BumpTop~\cite{Agarawala:BumpTop}.
-Piles can be expanded into a more detailed ring for an overview and detail visualization~\cite{Shneiderman:InfoVisTaxonomy}.
+
+
+
+
+### Immersion - Code Review
+Immersion represents methods as code fragments similarly to [Code Bubbles](video)and displays groups of fragments as piles on the floor like [BumpTop](video). Piles can be expanded into a 3D ring for reading and analysis. The ring uses semantic zoom to make method names readable even when at the back of the ring and the fragments retain a scaled height enabling the reviewer to approximate its length. 
 
 // TODO: add pic of Immersion
 
 #### Spatial Reasoning
-The reviewer initially sees the active fragment in the center of the screen with other relevant fragments distributed around the floor in piles. 
-Reviewers use spatial cognition to judge the relevance of piles by how far away the pile is as well as the size of the pile.
-The reviewer is able to scan the labels of the piles and number of fragments in each pile to quickly verify if each pile is indeed relevant.
+The reviewer initially sees the active fragment in the center of the screen with other relevant fragments distributed around the floor in piles. Reviewers use spatial cognition to judge the relevance of piles by how far away the pile is as well as the size of the pile. The reviewer is able to scan the labels of the piles and number of fragments in each pile to quickly verify if each pile is indeed relevant.
 
-Immersion divides the floor into sections based on packages of the system and color codes the sections to indicate how much that package has been modified by the code under review.
-By walking between packages, we expect reviewers to have better mental models due to the increased usage of spatial reasoning.
-Similarly, we expect that reviewers would be able to more easily recall review details after the review since the spatial elements of their brains were more engaged.
+Immersion divides the floor into sections based on packages of the system and color codes the sections to indicate how much that package has been modified by the code under review. By walking between packages, we expect reviewers to have better mental models due to the increased usage of spatial reasoning. Similarly, we expect that reviewers would be able to more easily recall review details after the review since the spatial elements of their brains were more engaged.
 
-//Immersion uses semantic zoom to make method names readable even when at the back of the ring and the fragments retain a scaled height enabling the reviewer to approximate its length. 
-
-### Gesture Interaction
-Reviewers can make a grabbing motion to select a pile and then can pull their hand up to transform the pile into a ring of fragments for more detailed inspection.
-The reviewer is now able to read the foremost fragment in the circle and can make horizontal finger swipes to rotate the circle and read other fragments. 
-The reviewer can pinch the foremost ring fragment on the top and bottom and move it to the middle of the screen to become the active fragment.
-If the reviewer wants to return to the previous method, they can move their hand as if clearing off a desk.
+#### Gesture Interaction
+Reviewers can make a grabbing motion to select a pile and then can pull their hand up to transform the pile into a ring of fragments for more detailed inspection. The reviewer is now able to read the foremost fragment in the circle and can make horizontal finger swipes to rotate the circle and read other fragments. The reviewer can pinch the foremost ring fragment on the top and bottom and move it to the middle of the screen to become the active fragment. If the reviewer wants to return to the previous method, they can move their hand as if clearing off a desk.
 
 We have initially focused on supporting exploration--comments can be added via keyboard input, but we are investigating alternative ways to mark and flag code.
-
 
 #### Usage Example
 Consider the previous comet scenario where a programmer has implemented a repositioning flight path for the lander.
 
-A reviewer puts on a Rift and enters Immersion to ensure this solution will actually work.
-She notes an edge case which might cause a collision and suggests gently crashing the companion orbiter into the probe to avoid a larger collision.
-The original programmer implements the suggestion in RiftSketch, ensures the simulation works and celebrates before submitting the correction to the reviewer.
-However, the reviewer sees a section of code light up in Immersion.
-As she walks over to the section she sees that it is the collision detection section warning that the system will not allow this code to execute outside of the simulator.
-She realizes she can allow the execution by shutting off the engine just before impact to override the system.
-They upload the code and the lander repositions itself as expected.
+A reviewer puts on a Rift and enters Immersion to ensure this solution will actually work. She notes an edge case which might cause a collision and suggests gently crashing the companion orbiter into the probe to avoid a larger collision. The original programmer implements the suggestion in RiftSketch, ensures the simulation works and celebrates before submitting the correction to the reviewer. However, the reviewer sees a section of code light up in Immersion. As she walks over to the section she sees that it is the collision detection section warning that the system will not allow this code to execute outside of the simulator. She realizes she can allow the execution by shutting off the engine just before impact to override the system. They upload the code and the lander repositions itself as expected.
 
 
-## Discussion
-// TODO: improve heading
+
+
+
+
+
+
+
+## Future Applications
+There are plenty of developer activities that can benefit from VR, maybe you could be the one to implement one of these ideas!
 
 ### Simulation
 Interacting with a simulation might require positioning a virtual cursor which can be challenging when you only have a 2D view of the scene. 
