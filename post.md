@@ -20,10 +20,7 @@ All of these devices give users more freedom in how they interact with computers
 
 
 ## Applications
-We have built VR prototypes for live coding and code review which concretely demonstrate the benefits of using the affordances of VR.
-We argue that the benefits described in this section can also be extended to other software engineering activities.
-
-Both of these systems use a head-mounted display (Oculus Rift - Development Kit 2) and a Leap Motion Controller for gesture recognition.
+Developers can take advantage of VR *now*, and if you don't seize the opportunity then someone else will get there first. Here are a couple prototypes for live coding and code review that concretely demonstrate how VR can help in software engineering. Use these prototypes as inspiration for creating your own software engineering tools that can use the advantages of VR as well.
 
 ### Live Coding
 RiftSketch\footnote{\url{http://www.youtube.com/watch?v=SKPYx4CEIlM}} is a live coding environment built for VR which allows users to describe a 3D scene using the Three.js library\footnote{\url{http://threejs.org/}}.
