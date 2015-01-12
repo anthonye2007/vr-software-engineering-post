@@ -6,54 +6,17 @@ I believe that software engineers could be more productive if they were able to 
 ## What is Virtual Reality?
 For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that are more like the physical world. These  interactions take more advantage of the capabilities of the human body potentially resulting in higher productivity, more creative opportunities, lower learning curves, and increased user satisfaction.
 
-### Depth from Stereoscopic Rendering
-The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the images just like in the physical world. 
-
-// TODO: how can this help?
+### Depth
+The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the virtually images just like in the physical world. Previously, 3D scenes have been displayed on 2D monitors, now users can view 3D scenes in true 3D.
 
 ### Body Movement
-There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which should enable opportunities not yet seen.
-// natural movement --> more freedom and power --> new opportunities and faster to complete
+There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which enables opportunities not yet seen.
 
 Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense head rotation and position. The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
 
 All of these devices give users more freedom in how they interact with computers. Us developers can now create applications like RiftSketch that put us in the middle of the 3D scene we are creating.
 
 // TODO: add links to devices
-
-## True 3D
-Previously, virtual 3D objects have been displayed on a 2D screen.  Rotation and movement are often allowed via mouse or keyboard controls but it is easy to forget the current orientation in relation to the big picture.  This is an issue fundamental to the problem of losing an entire dimension when displayed on a monitor.  VR overcomes this by literally allowing a user's view to complete an entire 360 degrees around them, just like in the physical world.  Having this immersive environment retains the third dimension and greatly helps users navigate the space and in essence, helps them get stuff done.
-
-// taken from paper:
-Existing 3D visualizations attempt to take advantage of spatial cognition but lose much of their impact when displayed on a 2D screen~\cite{Teyseyre:Overview3DSoftwareVisualization}.
-In contrast, head-mounted virtual reality displays allow the user to update their view by moving their body or rotating their neck, even a full 360 degrees.
-Additionally, these displays render a slightly different image for each eye (stereoscopic rendering) which enables the human eye to more easily sense depth of images on the display.
-
-// Why will VR take off when 3D TV sucked?
-
-## Improved Interaction
-Head mounted displays like the Oculus Rift are able to sense more of the human body.  The Rift can detect head rotation and head position relative to the camera in 3 dimensional space and rotates the virtual display in accordance to the user's muscle movement.  A novice user may have trouble remembering keyboard controls for 3D rotation, but they won't forget that simply turning their physical head controls the rotation.  Along with head movement, familiar hand gestures can also be used for more natural interaction and omni-directional treadmills would allow users to walk around their code by physically walking on the treadmill.
-
-// TODO: integrate the below paragraph.
-For example, perception of depth is enhanced by self-actuated movement in a space~\cite{Held:1963}.
-
-Researchers have explored integrating natural interactions with existing programming environments~\cite{Delimarschi:2014}.
-Through input devices such as the Leap Motion, it is possible to physically interact with virtual objects.
-Physical movement is also possible in virtual spaces.  Body harnesses\footnote{\url{http://cyberith.com/product/}} allow free movement in a virtual space such as walking, running, jumping and crouching.
-
-// TODO
-// Who will benefit the most from VR software engineering tools? 3D developers (for now)
-// Will normal developers still benefit?
-
-### Liveness
-// TODO: Read Tanimoto's paper about Liveness levels and then show how/if VR fits in.
-Liveness is a powerful affordance that can be defined by the speed and level of responsiveness to actions offered by an environment~\cite{Tanimoto:Liveness}.
-The potency of giving programmers a direct and immediate connection to their creations has been well illustrated in Bret Victor's seminal lecture, ``Inventing on Principle''~\cite{Victor:InventingOnPrincipleVideo}.//\cite{Victor:InventingOnPrincipleTranscript}.
-
-When liveness is violated, the results can be nauseating.
-Simulator sickness is distinct from motion sickness, in that it arises due to a mismatch between a person's interaction and the expected response of the environment.
-For example, a person in virtual reality can become nauseous when they attempt to interact with the system but the system does not respond quickly enough.
-
 
 
 ## Applications
@@ -206,3 +169,7 @@ The 1080p resolution of the Oculus Rift Development Kit 2 allows for passable te
 Two-dimensional development environments have not been able to take full advantage of affordances such as spatial cognition, manipulation, and liveness.
 This paper describes a vision of how software engineering can use virtual reality for new kinds of tools that can take advantage of these affordances.
 We described how both live coding and code review could benefit from VR tools but we envision many other software engineering activities can benefit from virtual reality as well.
+
+// TODO
+// Who will benefit the most from VR software engineering tools? 3D developers (for now)
+// Will normal developers still benefit?
