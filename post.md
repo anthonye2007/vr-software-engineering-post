@@ -1,43 +1,25 @@
 
 # Using Virtual Reality to Create Software: A Likely Future
 
-I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction that is both more familiar to users and more powerful than a traditional mouse and keyboard such as head rotation.
+I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction such as head rotation that is both more familiar to users and more powerful than a traditional mouse and keyboard.
 
 ## What is Virtual Reality?
 For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that are more like the physical world. These  interactions take more advantage of the capabilities of the human body potentially resulting in higher productivity, more creative opportunities, lower learning curves, and increased user satisfaction.
 
-### Current VR Devices
-This is currently accomplished mainly by devices like head-mounted displays such as the [Oculus Rift](https://www.oculus.com/). 
-
-### Depth
+### Depth from Stereoscopic Rendering
 The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the images just like in the physical world. 
 
 // TODO: how can this help?
 
 ### Body Movement
-The dream of VR is, while seated at your computer, being able to think about walking down the street and this actually causes your virtual persona to walk down the street. (link to Brain computer interface with VR paper) Although this sounds crazy, a proof of concept experiment has already been run. This is nowhere near consumer availablilty though, but there are a plethora of devices already available that enable the computer to sense our physical body movement.  The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
+There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which should enable opportunities not yet seen.
+// natural movement --> more freedom and power --> new opportunities and faster to complete
+
+Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense head rotation and position. The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
+
+All of these devices give users more freedom in how they interact with computers. Us developers can now create applications like RiftSketch that put us in the middle of the 3D scene we are creating.
 
 // TODO: add links to devices
-
-But wait, you may be asking the question: "Physical movement is cool, but what value does it add to VR?" We use our physical bodies everyday to accomplish all kinds of tasks. Most computers (desktops and laptops) are controlled via keyboard and mouse. Mobile computers (phones, phablets, and tablets) remove the mouse since we can use our fingers for control. This *direct manipulation* requires little explanation to new users
-
-The end goal is *direct manipulation* where (http://www-ihm.lri.fr/~mbl/ENS/FONDIHM/2013/papers/Hutchins-HCI-85.pdf)
-
-// TODO: how can this help?
-
-#### Head Rotation and Movement
-Rift wearers can even move their physical head to update their view of the virtual world. Rotating their physical head to the left actually causes the virtual world to rotate too!
-
-#### Hand Gestures
-Leap Motion, Data Glove, other new devices, company just bought by Oculus.
-
-#### Lower-body Movement
-Omnidirectional treadmills. 
-
-#### Full body suits
-PrioVR.
-
-VR allows people to see in true 3D and allows for easier and more natural interaction. These advantages have started to revolutionize both [gaming](http://www.techradar.com/us/news/gaming/beyond-oculus-the-future-of-virtual-reality-gaming-1255974) and [film making](http://www.jauntvr.com/) and could revolutionize software engineering as well.
 
 ## True 3D
 Previously, virtual 3D objects have been displayed on a 2D screen.  Rotation and movement are often allowed via mouse or keyboard controls but it is easy to forget the current orientation in relation to the big picture.  This is an issue fundamental to the problem of losing an entire dimension when displayed on a monitor.  VR overcomes this by literally allowing a user's view to complete an entire 360 degrees around them, just like in the physical world.  Having this immersive environment retains the third dimension and greatly helps users navigate the space and in essence, helps them get stuff done.
