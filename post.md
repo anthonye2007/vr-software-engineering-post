@@ -1,10 +1,13 @@
 
 # Using Virtual Reality to Create Software: A Likely Future
 
-I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction that is both more familiar to users and more powerful than a traditional mouse and keyboard (example: head rotation).
+I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction that is both more familiar to users and more powerful than a traditional mouse and keyboard such as head rotation.
 
 ## What is Virtual Reality?
-For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that more like the physical world. This is currently accomplished mainly by devices like head-mounted displays such as the [Oculus Rift](https://www.oculus.com/). 
+For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that are more like the physical world. These  interactions take more advantage of the capabilities of the human body potentially resulting in higher productivity, more creative opportunities, lower learning curves, and increased user satisfaction.
+
+### Current VR Devices
+This is currently accomplished mainly by devices like head-mounted displays such as the [Oculus Rift](https://www.oculus.com/). 
 
 ### Depth
 The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the images just like in the physical world. 
@@ -12,6 +15,13 @@ The Rift renders a slightly different image for each eye (this is called *stereo
 // TODO: how can this help?
 
 ### Body Movement
+The dream of VR is, while seated at your computer, being able to think about walking down the street and this actually causes your virtual persona to walk down the street. (link to Brain computer interface with VR paper) Although this sounds crazy, a proof of concept experiment has already been run. This is nowhere near consumer availablilty though, but there are a plethora of devices already available that enable the computer to sense our physical body movement.  The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
+
+// TODO: add links to devices
+
+But wait, you may be asking the question: "Physical movement is cool, but what value does it add to VR?" We use our physical bodies everyday to accomplish all kinds of tasks. Most computers (desktops and laptops) are controlled via keyboard and mouse. Mobile computers (phones, phablets, and tablets) remove the mouse since we can use our fingers for control. This *direct manipulation* requires little explanation to new users
+
+The end goal is *direct manipulation* where (http://www-ihm.lri.fr/~mbl/ENS/FONDIHM/2013/papers/Hutchins-HCI-85.pdf)
 
 // TODO: how can this help?
 
