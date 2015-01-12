@@ -22,46 +22,31 @@ All of these devices give users more freedom in how they interact with computers
 ## Applications
 Developers can take advantage of VR *now*, and if you don't seize the opportunity then someone else will get there first. Here are a couple prototypes for live coding and code review that concretely demonstrate how VR can help in software engineering. Use these prototypes as inspiration for creating your own software engineering tools that can use the advantages of VR as well.
 
-### Live Coding
-RiftSketch\footnote{\url{http://www.youtube.com/watch?v=SKPYx4CEIlM}} is a live coding environment built for VR which allows users to describe a 3D scene using the Three.js library\footnote{\url{http://threejs.org/}}.
-//It allows a user to describe a 3D scene using geometries, materials, textures, lights, meshes and other primitives provided by the Three.js library, which is a convenient wrapper for the WebGL APIs available in modern browsers. 
+### RiftSketch - Live Coding
+[RiftSketch](http://www.youtube.com/watch?v=SKPYx4CEIlM) is a live coding environment built for VR which allows users to describe a 3D scene using [Three.js](http://threejs.org/).
 // TODO: add pic of RiftSketch
 
-RiftSketch presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. 
-As the user types code into the editor, the world around them updates instantly to display the 3D scene dictated by their code. 
-RiftSketch also allows the user to animate their scene via a callback function which is executed on every frame. 
-The user can manipulate the state of the 3D scene in this looped block of code in order to add behaviour to the objects in their scene.
-This animation makes the user truly feel \emph{inside} the scene in a way not captured by a 2D screenshot.
+Live coding is a way to describe an environment that allows a developer to edit a program while it is running. The traditional program development cycle involved the four separate phases: edit, compile, link, run. In live programming, there is only one phase, at least in principle. The phase involves the program constantly running, even as various editing events occur [Tanimoto, VIVA].
+
+Tanimoto proposes that live coding is useful because it allows developers to see the effects of their changes much more quickly. This also helps developers to more easily identify which line of code caused a bug [Tanimoto, VIVA]
+
+RiftSketch presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. As the user types code into the editor, the world around them updates instantly to display the 3D scene dictated by their code. RiftSketch also allows the user to animate their scene via a callback function which is executed on every frame. The user can manipulate the state of the 3D scene in this looped block of code in order to add behaviour to the objects in their scene. This animation makes the user truly feel *inside* the scene in a way not captured by a 2D screenshot.
 
 To assist in interaction with the keyboard, we allow reality to shine through by using a web camera mounted on the Rift and project that image in the system.
 // TODO: add equipment pic and RiftSketch with webcam pic
 
 
-### Liveness
-RiftSketch demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. 
-RiftSketch is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance.  
-These benefits are especially evident in RiftSketch when the code describes a VR scene. 
-As the authors have previously experienced, watching the entire virtual world change around you as you type can be an extremely powerful and engaging experience.
+#### Liveness
+Although not unique to VR, liveness is greatly enhanced by it.
+RiftSketch demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. RiftSketch is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance. These benefits are especially evident in RiftSketch when the code describes a VR scene. Watching the entire virtual world change around you as you type can be an extremely powerful and engaging experience.
 
 #### Hand Manipulation of Code
-Furthermore, RiftSketch provides the user with shortcuts and input methods to quickly edit numbers in the code that they write. 
-Keyboard shortcuts allow the user to increment or decrement numbers in the code by factors of 0.1, 10 or 100. 
-Integration with the Leap Motion Controller provides users with the ability to manipulate numbers using an up and down hand motion.
-This allows users to continuously modify a number using their hand and instantly see how this affects the scene, enabling faster feedback than manually typing one number at a time.
-Numbers in the code could represent anything, from the X, Y or Z components of a position or rotation vector, the red, green or blue components of an object's material or a component in the calculation of an object's animated speed.
+Furthermore, RiftSketch provides the user with shortcuts and input methods to quickly edit numbers in the code that they write. Integration with the Leap Motion Controller provides users with the ability to manipulate numbers using an up and down hand motion. This allows users to continuously modify a number using their hand and instantly see how this affects the scene, enabling faster feedback than the integrated keyboard shortcuts. Numbers in the code could represent anything, from the X, Y or Z components of a position or rotation vector, the red, green or blue components of an object's material or a component in the calculation of an object's animated speed.
 
 #### Usage Example
-Consider the following scenario: A space mission has just landed a probe on the surface of a comet.
-After 10 years in flight, the probe lands against all odds but in a position that is unable to receive sunlight.
-Automated telemetry programs cannot find a feasible flight path.
-As a programmer, you are tasked with updating the lander's software to reposition itself safely on solid ground and you have 24 hours before its batteries die and the probe deflects off the comet surface. 
-Thankfully the companion orbiter has gathered detailed information about the surface around the landing site and telemetry data shows exactly where and how the lander is positioned.
+Consider the following scenario: A space mission has just landed a probe on the surface of a comet. After 10 years in flight, the probe lands against all odds but in a position that is unable to receive sunlight. Automated telemetry programs cannot find a feasible flight path. As a programmer, you are tasked with updating the lander's software to reposition itself safely on solid ground and you have 24 hours before its batteries die and the probe deflects off the comet surface. Thankfully the companion orbiter has gathered detailed information about the surface around the landing site and telemetry data shows exactly where and how the lander is positioned.
 
-You update your simulation with the data and step into RiftSketch to survey the situation. 
-After assessing the lander's options, you iterate on possible solutions, first by using hand gestures to manipulate a possible path and scale thrust settings, 
-and then the keyboard to refine the code. 
-With each solution, you observe the lander's behavior inside RiftSketch.
-You walk around the lander to inspect its position after each maneuver, leaning in to ensure that its feet are planted firmly in the regolith, and zooming out to an orbital view to verify that its new position maintains a line-of-sight to the orbiter on this lob-sided comet. 
+You update your simulation with the data and step into RiftSketch to survey the situation. After assessing the lander's options, you iterate on possible solutions, first by using hand gestures to manipulate a possible path and scale thrust settings, and then the keyboard to refine the code. With each solution, you observe the lander's behavior inside RiftSketch. You walk around the lander to inspect its position after each maneuver, leaning in to ensure that its feet are planted firmly in the regolith, and zooming out to an orbital view to verify that its new position maintains a line-of-sight to the orbiter on this lob-sided comet. 
 
 Finally, after having run the simulation dozens of times in RiftSketch, you pass the software on to review.
 
