@@ -50,9 +50,9 @@ Developers can take advantage of VR *now*, and if you don't seize the opportunit
 [RiftSketch](http://www.youtube.com/watch?v=SKPYx4CEIlM) is a live coding environment built for VR which allows users to describe a 3D scene using [Three.js](http://threejs.org/).
 // TODO: add pic of RiftSketch
 
-Live coding is a way to describe an environment that allows a developer to edit a program while it is running. The traditional program development cycle involved the four separate phases: edit, compile, link, run. In live programming, there is only one phase, at least in principle. The phase involves the program constantly running, even as various editing events occur [Tanimoto, VIVA].
+Live coding, as [described by Tanimoto][Tanimoto:VIVA], is a way to describe an environment that allows a developer to edit a program while it is running. The traditional program development cycle involved the four separate phases: edit, compile, link, run. In live programming, there is only one phase, at least in principle. The phase involves the program constantly running, even as various editing events occur.
 
-Tanimoto proposes that live coding is useful because it allows developers to see the effects of their changes much more quickly. This also helps developers to more easily identify which line of code caused a bug [Tanimoto, VIVA]
+[Tanimoto proposes][Tanimoto:VIVA] that live coding is useful because it allows developers to see the effects of their changes much more quickly. This also helps developers to more easily identify which line of code caused a bug.
 
 RiftSketch presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. As the user types code into the editor, the world around them updates instantly to display the 3D scene dictated by their code. RiftSketch also allows the user to animate their scene via a callback function which is executed on every frame. The user can manipulate the state of the 3D scene in this looped block of code in order to add behaviour to the objects in their scene. This animation makes the user truly feel *inside* the scene in a way not captured by a 2D screenshot.
 
@@ -61,8 +61,7 @@ To assist in interaction with the keyboard, we allow reality to shine through by
 
 
 #### Liveness
-Although not unique to VR, liveness is greatly enhanced by it.
-RiftSketch demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. RiftSketch is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance. These benefits are especially evident in RiftSketch when the code describes a VR scene. Watching the entire virtual world change around you as you type can be an extremely powerful and engaging experience.
+Although not unique to VR, liveness is greatly enhanced by it. RiftSketch demonstrates liveness by providing a tight feedback loop between code written and its effect in a virtual environment, and to quickly experiment with various solutions, algorithms and calculations. RiftSketch is also very promising as a learning tool since users can see their mistakes immediately and correct themselves without an intermediate compile step that might otherwise act as a hindrance. These benefits are especially evident in RiftSketch when the code describes a VR scene. Watching the entire virtual world change around you as you type can be an extremely powerful and engaging experience.
 
 #### Hand Manipulation of Code
 Furthermore, RiftSketch provides the user with shortcuts and input methods to quickly edit numbers in the code that they write. Integration with the Leap Motion Controller provides users with the ability to manipulate numbers using an up and down hand motion. This allows users to continuously modify a number using their hand and instantly see how this affects the scene, enabling faster feedback than the integrated keyboard shortcuts. Numbers in the code could represent anything, from the X, Y or Z components of a position or rotation vector, the red, green or blue components of an object's material or a component in the calculation of an object's animated speed.
@@ -197,3 +196,12 @@ Two-dimensional development environments have not been able to take full advanta
 Developers who currently work with 3D scenes stand to benefit immediately from VR tools since the current approach of using 2D monitors negatively effects them the most.  Other software domains will benefit as well, but we need more people creating VR tools to make their investment worthwhile.
 
 Virtual reality is here. What are you doing to help?
+
+
+
+
+---
+Thanks to [Brian Peiris](http://brian.peiris.io/) and [Chris Parnin](http://chrisparnin.me/) for contributing to this essay.
+
+
+[Tanimoto:VIVA]: http://dl.acm.org/citation.cfm?id=1747286 "Tanimoto, VIVA"
