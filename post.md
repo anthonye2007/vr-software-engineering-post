@@ -20,13 +20,26 @@ There is a wide variety of devices that can sense the movement of the human body
 
 Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense head rotation and position. The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
 
+A lab experiment regarding brain-computer interfaces and VR was recently conducted in which participants brains were monitored while in a VR environment and asked to think about moving in the VR environment [academic paper](http://www.ijircce.com/upload/2013/december/_16_dr_20A.pdf).  The equipment caused the avatar's legs to move when it detected specific brain signals. The researchers found that 70% participants were able to completely walk down the virtual street merely by *thinking* about that movement.
+
 All of these devices give users more freedom in how they interact with computers. Us developers can now create applications like RiftSketch that put us in the middle of the 3D scene we are creating.
 
 // TODO: add links to devices
 
 // TODO: reference natural gesture paper?
 
-// TODO: argue VR > physical b/c of malleability
+
+### Malleablility
+One reason virtual environments are nice is because they are more easily changed than physical environments.  This results in virtual environments often being able to accomplish tasks more quickly and more cheaply than a similar task done in a physical environment.
+
+#### Physical environment
+Consider a situation where I needed to show the contents of a document I have memorized to another person. My constraints are that I do not have the document in front of me, the person is deaf, and I only have a pencil and a small sticky note. I decide to write down part of the document onto the sticky note, wait for the person to read it, then erase the sticky note and write down the next part of the file. I continue this until done.
+
+#### Virtual environment
+However, add a computer to the mix and the entire process becomes much faster and easier. The computer can write the contents of the file onto a small window the size of a sticky note, wait for the user to acknowledge they read it, then erase the contents of the note and write the next part of the file, repeating until finished. This virtual process is much faster and requires less work than the physical process.
+
+VR combines the best of the physical world with the best of the virtual world and provides a new medium that blends the two together.
+
 
 
 
