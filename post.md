@@ -18,15 +18,11 @@ I expect that VR tools will take advantage of this extra spatial processing and 
 ### Body Movement
 There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which enables opportunities not yet seen.
 
-Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense head rotation and position. The Leap Motion Controller is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The Kinect camera can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like Virtuix Omni allows physical walking to translate to avatar movement. Body harnesses like the Cyberinth further allow crouching and jumping.
+Head mounted displays like the [Oculus Rift](https://www.oculus.com/) can sense head rotation and position. The [Leap Motion Controller](https://www.leapmotion.com/) is a thumb sized device that can sense hand and finger bones quite precisely when placed near your keyboard. The [Kinect camera](http://www.microsoft.com/en-us/kinectforwindows/) can sense arm, leg, and torso movements accurately. An omnidirectional treadmill like [Virtuix Omni](http://www.virtuix.com/) allows physical walking to translate to avatar movement. Body harnesses like the [Cyberinth](http://cyberith.com/) further allow crouching and jumping.
 
-A lab experiment regarding brain-computer interfaces and VR was recently conducted in which participants brains were monitored while in a VR environment and asked to think about moving in the VR environment [academic paper](http://www.ijircce.com/upload/2013/december/_16_dr_20A.pdf).  The equipment caused the avatar's legs to move when it detected specific brain signals. The researchers found that 70% participants were able to completely walk down the virtual street merely by *thinking* about that movement.
+A lab experiment regarding brain-computer interfaces and VR was recently conducted in which participants brains were monitored while in a VR environment and asked to think about moving in the VR environment ([academic paper](http://www.ijircce.com/upload/2013/december/_16_dr_20A.pdf)).  The equipment caused the avatar's legs to move when it detected specific brain signals. The researchers found that 70% participants were able to completely walk down the virtual street merely by *thinking* about that movement.
 
-All of these devices give users more freedom in how they interact with computers. Us developers can now create applications like RiftSketch that put us in the middle of the 3D scene we are creating.
-
-// TODO: add links to devices
-
-// TODO: reference natural gesture paper?
+Incorporating body movement gives users more freedom in how they interact with computers.
 
 
 ### Malleablility
