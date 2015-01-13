@@ -49,6 +49,7 @@ Developers can take advantage of VR *now*, and if you don't seize the opportunit
 ### RiftSketch - Live Coding
 [RiftSketch](http://www.youtube.com/watch?v=SKPYx4CEIlM) is a live coding environment built for VR which allows users to describe a 3D scene using [Three.js](http://threejs.org/).
 // TODO: add pic of RiftSketch
+![RiftSketch](../images/riftsketch-tree.png)
 
 Live coding, as [described by Tanimoto][Tanimoto:VIVA], is a way to describe an environment that allows a developer to edit a program while it is running. The traditional program development cycle involved the four separate phases: edit, compile, link, run. In live programming, there is only one phase, at least in principle. The phase involves the program constantly running, even as various editing events occur.
 
