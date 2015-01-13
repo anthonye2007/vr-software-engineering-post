@@ -58,7 +58,9 @@ Live coding, as [described by Tanimoto][Tanimoto:VIVA], is a way to describe an 
 RiftSketch presents a user with a simple text editor, floating in front of them in an otherwise empty VR world. As the user types code into the editor, the world around them updates instantly to display the 3D scene dictated by their code. RiftSketch also allows the user to animate their scene via a callback function which is executed on every frame. The user can manipulate the state of the 3D scene in this looped block of code in order to add behaviour to the objects in their scene. This animation makes the user truly feel *inside* the scene in a way not captured by a 2D screenshot.
 
 To assist in interaction with the keyboard, we allow reality to shine through by using a web camera mounted on the Rift and project that image in the system.
-// TODO: add equipment pic and RiftSketch with webcam pic
+
+![Webcam passthrough](images/webcam_passthrough.png)
+![Equipment](images/equipment.jpg)
 
 
 #### Liveness
@@ -82,7 +84,7 @@ Finally, after having run the simulation dozens of times in RiftSketch, you pass
 ### Immersion - Code Review
 Immersion represents methods as code fragments similarly to [Code Bubbles](video)and displays groups of fragments as piles on the floor like [BumpTop](video). Piles can be expanded into a 3D ring for reading and analysis. The ring uses semantic zoom to make method names readable even when at the back of the ring and the fragments retain a scaled height enabling the reviewer to approximate its length. 
 
-// TODO: add pic of Immersion
+![Immersion](images/immersion.png)
 
 #### Spatial Reasoning
 The reviewer initially sees the active fragment in the center of the screen with other relevant fragments distributed around the floor in piles. Reviewers use spatial cognition to judge the relevance of piles by how far away the pile is as well as the size of the pile. The reviewer is able to scan the labels of the piles and number of fragments in each pile to quickly verify if each pile is indeed relevant.
