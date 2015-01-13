@@ -4,12 +4,16 @@
 I believe that software engineers could be more productive if they were able to work in a virtual reality (VR) environment.  Why? Firstly, VR enables software engineers to be completely surrounded in a truly three dimensional work environment, rather than being limited to a few 2D monitors in front of them.  Secondly, VR facilitates interaction such as head rotation that is both more familiar to users and more powerful than a traditional mouse and keyboard.
 
 ## What is Virtual Reality?
-For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that are more like the physical world. These  interactions take more advantage of the capabilities of the human body potentially resulting in higher productivity, more creative opportunities, lower learning curves, and increased user satisfaction.
+For those who aren't familiar with [virtual reality](http://en.wikipedia.org/wiki/Virtual_reality), it is a big step towards allowing humans to interact with digital equipment in ways that are more like the physical world. These  interactions more fully take advantage of the capabilities of the human body resulting in new creative opportunities and potentially resulting in higher productivity, lower learning curves, and increased user satisfaction.
 
 ### Depth
 The Rift renders a slightly different image for each eye (this is called *stereoscopic rendering*) which allows humans to sense depth in the virtually images just like in the physical world. Previously, 3D scenes have been displayed on 2D monitors, now users can view 3D scenes in true 3D.
 
-// TODO: bring in a simplified version of the spatial argument here
+By rendering in true 3D, VR tools are able to engage our brain's spatial processing system more. Greater spatial engagement of our brains should result in increased productivity. 
+
+For example, Data Mountain was a tool created to organize web bookmarks on a 3D inclined plane. The creators theorized that adding depth as well as the ability to move the bookmarks around would engage users' spatial processing more and thus result in improved performance. A study was conducted by Microsoft Research that showed that "storage times, retrieval times, and retrieval failures were all reduced because of this aspect of spatial memory's influence" ([academic paper](http://research.microsoft.com/apps/pubs/default.aspx?id=64329)).
+
+I expect that VR tools will take advantage of this extra spatial processing and will result in increased developer productivity.
 
 ### Body Movement
 There is a wide variety of devices that can sense the movement of the human body. These interactions allow users to have more freedom when expressing themselves which enables opportunities not yet seen.
@@ -22,7 +26,7 @@ All of these devices give users more freedom in how they interact with computers
 
 // TODO: reference natural gesture paper?
 
-
+// TODO: argue VR > physical b/c of malleability
 
 
 
